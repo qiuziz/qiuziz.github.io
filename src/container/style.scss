@@ -1,0 +1,9 @@
+.goods-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 10px;
+	.goods__content {
+		flex-basis: 49%;
+	}
+}

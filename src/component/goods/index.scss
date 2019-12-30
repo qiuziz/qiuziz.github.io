@@ -1,0 +1,44 @@
+.goods__content {
+	height: 260px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-shrink: 0;
+  background: #fff;
+  margin-top: 9px;
+  border-radius: 6px;
+  overflow: hidden;
+	
+
+	.good-img-wrap {
+		height: 65%;
+		overflow: hidden;
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.good-name {
+		padding: 0 10px;
+    margin-top: 10px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    line-height: 20px;
+    text-overflow: ellipsis;
+		min-height: 0;
+		font-size: 14.352px;
+    color: #333333;
+	}
+	.good-price {
+		padding: 0 10px;
+		font-size: 15px;
+		margin-top: 10px;
+    line-height: 17px;
+		color: #ff5500;
+		text-align: left;
+	}
+}
