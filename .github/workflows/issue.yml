@@ -3,7 +3,7 @@ name: git issues blog workflow
 on: 
   push:
     branches:
-      - master
+      - develop
     paths:
       - 'posts/*.md'
       - 'posts/*/*.md'
@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
       with:
-        ref: master
+        ref: develop
     - name: Git-Issues-Blog
       uses: Sep0lkit/git-issues-blog@v1.3
       env:
