@@ -103,7 +103,9 @@ checkBrowsers(paths.appPath, isInteractive)
         publicPath,
         buildFolder,
         useYarn
-      );
+			);
+			// resolve github.io can't support spa
+			fs.copySync(paths.appBuild + '/index.html', paths.appBuild + '/404.html');
     },
     err => {
       console.log(chalk.red('Failed to compile.\n'));
