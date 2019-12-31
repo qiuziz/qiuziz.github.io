@@ -11,5 +11,6 @@ export const Resource = {
 	/**
 	 * 获取token
 	 */
-	issues: fetchResource(`${API_HOST}${SERVICE_NAME}/issues`),
+	issues: fetchResource(`${API_HOST}${SERVICE_NAME}/issues/:number`),
+	// article: fetchResource(``),
 };

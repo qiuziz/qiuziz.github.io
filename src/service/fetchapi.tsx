@@ -3,7 +3,7 @@
  * @Github: <https://github.com/qiuziz>
  * @Date: 2018-11-02 14:38:52
  * @Last Modified by: qiuz
- * @Last Modified time: 2019-12-30 22:22:51
+ * @Last Modified time: 2019-12-31 11:34:28
  */
 
 import 'whatwg-fetch';
@@ -22,7 +22,7 @@ const fetchMethod = async (_url: string, _config: any) => {
 		}
 		let result: any = {};
 		try {
-			result = response.json();
+			result = await response.json();
 		} catch (error) {
 			result = {};
 		}

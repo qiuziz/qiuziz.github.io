@@ -3,30 +3,35 @@
  * @Github: <https://github.com/qiuziz>
  * @Date: 2019-11-07 16:03:31
  * @Last Modified by: qiuz
- * @Last Modified time: 2019-12-26 19:43:29
+ * @Last Modified time: 2019-12-31 14:34:39
  */
 
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
-import { LayoutView as Layout } from './component';
-
 import {
 	Home
 } from './container';
+import { Article } from './container/article';
 
 export const routes = [
   {
     path: '/',
     Component: Home,
     exact: true,
-		Layout: Layout,
 		title: '首页',
+		noNav: true
+  },
+  {
+    path: '/article',
+    Component: Article,
+    exact: true,
+		title: '',
 		noNav: true
   },
 ];
 
-const prefix = process.env.NODE_ENV === 'production' ? '/cooking' : '';
+const prefix = process.env.NODE_ENV === 'production' ? '/blog' : '';
 
 const App = () => {
   return (
