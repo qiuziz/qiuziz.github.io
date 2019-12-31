@@ -201,7 +201,8 @@ module.exports = function(webpackEnv) {
               // https://github.com/facebook/create-react-app/issues/5250
               // Pending futher investigation:
               // https://github.com/terser-js/terser/issues/120
-              inline: 2,
+							inline: 2,
+							drop_console: true
             },
             mangle: {
               safari10: true,
@@ -308,9 +309,9 @@ module.exports = function(webpackEnv) {
           use: [
             {
               options: {
-                // formatter: require.resolve('react-dev-utils/eslintFormatter'),
-                // eslintPath: require.resolve('eslint'),
-                useEslintrc: true
+                formatter: require.resolve('react-dev-utils/eslintFormatter'),
+                eslintPath: require.resolve('eslint'),
+                // useEslintrc: true
               },
               loader: require.resolve('eslint-loader'),
             },

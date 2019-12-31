@@ -3,7 +3,7 @@
  * @Github: <https://github.com/qiuziz>
  * @Date: 2019-10-31 20:39:25
  * @Last Modified by: qiuz
- * @Last Modified time: 2019-12-31 14:53:29
+ * @Last Modified time: 2019-12-31 17:57:05
  */
 
 import React, { useState } from 'react';
@@ -26,14 +26,20 @@ export const Home = () => {
 				setHasMore(res.length >= 5);
 			});
 	}
-
+	const style = postList.length <= 0
+	? {
+			className: 'fixed'
+		}
+	: {
+			scale: 0.2
+		};
 	return (
 		<div className="home">
 			<InfiniteScroll
 				pageStart={0}
 				loadMore={getPosts}
 				hasMore={hasMore}
-				loader={<Loading key={0} />}
+				loader={<Loading key={0} {...style} />}
 			>
 				<Post data={postList} />
 			</InfiniteScroll>
