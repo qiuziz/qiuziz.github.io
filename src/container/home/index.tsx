@@ -3,21 +3,15 @@
  * @Github: <https://github.com/qiuziz>
  * @Date: 2019-10-31 20:39:25
  * @Last Modified by: qiuz
- * @Last Modified time: 2019-12-31 14:39:08
+ * @Last Modified time: 2019-12-31 14:53:29
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './index.scss';
 import { Resource } from '../../service/resource';
 import { Post } from '../../component';
 import InfiniteScroll from 'react-infinite-scroller';
 import { Loading } from '../../component/loading';
-
-interface PropsType {
-	History: any;
-	location: any;
-	history: any;
-}
 
 export const Home = () => {
 	const [postList, setPostList] = useState<any[]>([]);

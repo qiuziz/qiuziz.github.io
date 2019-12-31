@@ -1,0 +1,6 @@
+{
+	"extends": "react-app",
+	"rules": {
+		"jsx-no-target-blank": "off"
+	}
+}

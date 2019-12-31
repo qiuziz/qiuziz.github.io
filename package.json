@@ -86,7 +86,10 @@
     "deploy": "sh scripts/deploy.sh"
   },
   "eslintConfig": {
-    "extends": "react-app"
+		"extends": "react-app",
+		"rules": {
+			"jsx-no-target-blank": "off"
+		}
   },
   "browserslist": {
     "production": [
