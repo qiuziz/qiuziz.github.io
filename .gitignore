@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+#git issue
+_index
+
 # testing
 /coverage
 
