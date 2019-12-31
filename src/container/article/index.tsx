@@ -3,7 +3,7 @@
  * @Github: <https://github.com/qiuziz>
  * @Date: 2019-10-31 20:39:25
  * @Last Modified by: qiuz
- * @Last Modified time: 2019-12-31 14:34:11
+ * @Last Modified time: 2019-12-31 14:39:38
  */
 
 import React, { useState, useEffect } from 'react';
@@ -25,7 +25,7 @@ export const Article = (props: PropsType) => {
 	const { number } = getUrlParams();
 	const [ data, setData] = useState({} as any);
 	const getArticle = () => {
-		Resource.issues.get({ number, access_token: 'a17e7a411ecac60faf4c6b41a185fcb04a159b99' })
+		Resource.issues.get({ number })
 			.then((res: any) => {
 				console.log(res);
 				document.title = res.title;
