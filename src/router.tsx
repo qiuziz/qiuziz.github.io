@@ -3,7 +3,7 @@
  * @Github: <https://github.com/qiuziz>
  * @Date: 2019-11-07 16:03:31
  * @Last Modified by: qiuz
- * @Last Modified time: 2019-12-31 14:34:39
+ * @Last Modified time: 2019-12-31 15:36:08
  */
 
 import React from 'react';
@@ -31,8 +31,6 @@ export const routes = [
   },
 ];
 
-const prefix = process.env.NODE_ENV === 'production' ? '/blog' : '';
-
 const App = () => {
   return (
     <Switch>
@@ -41,7 +39,7 @@ const App = () => {
 					return (
 						<Route
 							key={index}
-							path={`${prefix}${path}`}
+							path={path}
 							exact={exact}
 							render={
 								props => <Component {...props} History={History} />
@@ -50,7 +48,7 @@ const App = () => {
           )
         })
       }
-      <Redirect to={prefix} />
+      <Redirect to={''} />
     </Switch>
   )
 }

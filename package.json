@@ -1,7 +1,7 @@
 {
   "name": "blog",
   "version": "0.1.0",
-  "homepage": "https://qiuziz.github.io/blog",
+  "homepage": "https://qiuziz.github.io",
   "description": "qiuz's blog",
   "license": "MIT",
   "dependencies": {
