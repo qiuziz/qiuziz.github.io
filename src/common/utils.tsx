@@ -1,5 +1,6 @@
 import { isObject, isArray, isDate } from './is-type';
 import queryString from 'qs';
+import { RANDOM_IMG_URL } from '../constants';
 
 /**
  * @description m => km
@@ -207,5 +208,11 @@ export function isZhCN(pathname: string = window.location.pathname) {
  */
 export const getPathOfLang = (enPath: string, zhPath: string) => {
 	return isZhCN() ? zhPath : enPath
+}
+
+export const dailyWallpaper = () => {
+	const bg: any = document.querySelector('#bg');
+	const url = RANDOM_IMG_URL[Math.floor(Math.random() * RANDOM_IMG_URL.length)]
+	bg.style.backgroundImage = `url(${url})`;
 }
 

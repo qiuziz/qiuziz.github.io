@@ -21,6 +21,17 @@ body {
 	padding-left: constant(safe-area-inset-left);
 	padding-right: constant(safe-area-inset-right);
 	padding-bottom: constant(safe-area-inset-bottom);
+	padding-top: 40vh;
+}
+#bg {
+	background-repeat: no-repeat;
+	background-image: url('https://api.newview.top/wallpaper/?cid=10&freq=0&resolution=__85');
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
 }
 
 #root {
