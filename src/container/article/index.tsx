@@ -32,13 +32,16 @@ export const Article = (props: PropsType) => {
 	
 	useEffect(() => {
 		getArticle();
-	}, [getArticle])
+	}, [getArticle]);
 
 	return (
 		<div className="article">
 			<h2>{data.title}</h2>
 			<p className="publish-time">{data.updated_at && dateFormat(new Date(data.updated_at))} by <a href="https://github.com/qiuziz">qiuz</a></p>
 			<Markdown source={data.body} />
+			<p className="commit">
+				<label><a href={`https://github.com/qiuziz/qiuziz.github.io/issues/${number}`}>去评论</a></label>
+			</p>
 		</div>
 	);
 }

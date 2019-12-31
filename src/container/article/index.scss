@@ -11,4 +11,19 @@
 	overflow: hidden;
 	min-height: 100vh;
 	box-sizing: border-box;
+
+	.commit {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		border-top: 1px solid #ddd;
+		margin-top: 30px;
+		padding-top: 30px;
+		label {
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			padding: 5px 20px;
+			cursor: pointer;
+		}
+	}
 }
