@@ -23,6 +23,7 @@ jobs:
         BASE_BRANCH: develop
         FOLDER: build
         BUILD_SCRIPT: npm install && npm run build
+        CNAME: blog.qiuz.site
      
     - name: delete deploy branch
       run: git push --delete "https://${{ secrets.ACCESS_TOKEN }}@${{ secrets.GIT_REF }}" deploy
