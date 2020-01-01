@@ -3,7 +3,7 @@
  * @Github: <https://github.com/qiuziz>
  * @Date: 2019-10-31 20:39:25
  * @Last Modified by: qiuz
- * @Last Modified time: 2019-12-31 17:57:05
+ * @Last Modified time: 2020-01-01 13:17:10
  */
 
 import React, { useState } from 'react';
@@ -19,7 +19,7 @@ export const Home = () => {
 	const getPosts = (page = 1) => {
 		console.log(page);
 		if (!hasMore) return;
-		Resource.issues.get({ per_page: '5', page })
+		Resource.issues.get({ per_page: '10', page })
 			.then((res: any) => {
 				console.log(res);
 				setPostList([...postList, ...res]);

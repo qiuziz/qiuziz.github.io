@@ -1,4 +1,4 @@
-
+@import './assets/main.css';
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +21,7 @@ body {
 	// padding-left: constant(safe-area-inset-left);
 	// padding-right: constant(safe-area-inset-right);
 	// padding-bottom: constant(safe-area-inset-bottom);
-	padding-top: 40vh;
+	padding-top: 60vh;
 }
 #bg {
 	background-repeat: no-repeat;
@@ -32,6 +32,7 @@ body {
 	right: 0;
 	width: 100vw;
 	height: 100vh;
+	z-index: -1;
 }
 
 #root {
