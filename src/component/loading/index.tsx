@@ -11,14 +11,14 @@ import './index.scss';
 
 interface Props {
 	className?: string;
-	scale?: number
+	zoom?: number
 }
 
 export const Loading = (props:Props) => {
-	const { className = '', scale = 1 } = props;
+	const { className = '', zoom } = props;
 	return (
 		<div className={`loading__box ${className}`}>
-			<div className="loading__box-lds" style={{transform: `translateZ(0) scale(${scale})`}}>
+			<div className="loading__box-lds" style={{zoom: zoom}}>
 					<div /><div /><div />
 			</div>
 		</div>

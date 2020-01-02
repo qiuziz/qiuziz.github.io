@@ -36,7 +36,7 @@ export const Article = (props: PropsType) => {
 	}, [getArticle]);
 
 	return (
-		<div className="article">
+		<div className="article content">
 			{
 				data.title
 					? <React.Fragment>

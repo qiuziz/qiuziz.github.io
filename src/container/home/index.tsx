@@ -31,7 +31,7 @@ export const Home = () => {
 			className: 'fixed'
 		}
 	: {
-			scale: 0.2
+			zoom: 0.2
 		};
 	return (
 		<div className="home">
