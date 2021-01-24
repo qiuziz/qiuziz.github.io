@@ -1,7 +1,7 @@
 {
   "name": "blog",
   "version": "0.1.0",
-  "homepage": "http://blog.qiuz.site",
+  "homepage": "http://pages.qiuz.site",
   "description": "qiuz's blog",
   "license": "MIT",
   "dependencies": {
