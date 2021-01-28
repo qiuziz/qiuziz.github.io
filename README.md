@@ -1,13 +1,2 @@
-## Syrinx-h5
+# Widget
 
-### Usage
-
-```sh
-$ yarn
-
-# development
-$ yarn start
-
-# build
-$ yarn build
-```

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <script>
+      sessionStorage.redirect = location.href;
+    </script>
+    <meta http-equiv="refresh" content="0;URL='/widget/'" />
+    <style>
+      @keyframes lds-1 {
+        0% {
+          top: 36px;
+          height: 128px;
+        }
+
+        50% {
+          top: 60px;
+          height: 80px;
+        }
+
+        100% {
+          top: 60px;
+          height: 80px;
+        }
+      }
+
+      @keyframes lds-2 {
+        0% {
+          top: 41.99999999999999px;
+          height: 116.00000000000001px;
+        }
+
+        50% {
+          top: 60px;
+          height: 80px;
+        }
+
+        100% {
+          top: 60px;
+          height: 80px;
+        }
+      }
+
+      @keyframes lds-3 {
+        0% {
+          top: 48px;
+          height: 104px;
+        }
+
+        50% {
+          top: 60px;
+          height: 80px;
+        }
+
+        100% {
+          top: 60px;
+          height: 80px;
+        }
+      }
+
+      .loading__box {
+        display: inline-block;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .loading__box-lds {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        transform: translateZ(0) scale(1);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transform-origin: 0 0;
+      }
+
+      .loading__box-lds div {
+        position: absolute;
+        box-sizing: content-box;
+        width: 30px;
+      }
+
+      .loading__box-lds div:nth-child(1) {
+        left: 35px;
+        background: #85a2b6;
+        animation: lds-1 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+        animation-delay: -0.2s;
+      }
+
+      .loading__box-lds div:nth-child(2) {
+        left: 85px;
+        background: #bbcedd;
+        animation: lds-2 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+        animation-delay: -0.1s;
+      }
+
+      .loading__box-lds div:nth-child(3) {
+        left: 135px;
+        background: #dce4eb;
+        animation: lds-3 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+        animation-delay: undefineds;
+      }
+
+      .loading__box.fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+      }
+      @media screen and (max-width: 600px) {
+        .fixed .loading__box-lds {
+          zoom: 0.3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading__box fixed">
+      <div class="loading__box-lds" style="transform: translateZ(0px) scale(1)">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>

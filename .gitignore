@@ -5,16 +5,18 @@
 /.pnp
 .pnp.js
 
-#git issue
-_index
-
 # testing
 /coverage
 
 # production
 /build
-build.zip
-*.zip
+/dist
+temp/
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
 
 # misc
 .DS_Store

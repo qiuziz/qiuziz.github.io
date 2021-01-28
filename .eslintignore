@@ -1,2 +1,5 @@
-config
-old
+config/*
+public/*
+script/*
+**node_modules**
+*
