@@ -5,22 +5,20 @@
  * @Last Modified by: qiuz
  */
 
+import { MENU_LIST } from 'pages/dashboard/mock';
 import React, { Component } from 'react';
 import './index.less';
 
 export default class HeaderBar extends Component<any, any> {
-  state = {
-    icon: 'arrows-alt',
-    count: 100,
-    visible: false
-  };
 
   render() {
     return (
-      <div id="headerbar">
-        <div style={{ lineHeight: '64px', float: 'right' }}>
-          <ul className="header-ul"></ul>
-        </div>
+      <div className="header-bar">
+        <ul className="header-ul">
+          {MENU_LIST.map((menu: any) => {
+            return <li key={menu.key}><a href={menu.url}>{menu.title}</a></li>;
+          })}
+        </ul>
       </div>
     );
   }
