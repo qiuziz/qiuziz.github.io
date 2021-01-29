@@ -3,14 +3,14 @@ export const MENU_LIST = [
     id: 1,
     key: 1,
     title: 'Blog',
-    url: '/blog/list/',
+    url: '/q/blog/',
     entry: '/blog/',
   },
   {
     id: 2,
     key: 2,
     title: 'React Image Map',
-    url: '/widget/react-image-map/',
+    url: '/q/react-image-map/',
     entry: '/react-image-map/',
   },
 ];
