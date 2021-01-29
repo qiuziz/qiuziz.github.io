@@ -121,7 +121,7 @@ export default class Dashboard extends Component<any, any> {
     /**
      * Step4 启动应用
      */
-    start();
+    start({ sandbox: { experimentalStyleIsolation: true } });
     this.getMenuQuery();
     runAfterFirstMounted(() => {
       console.log('[MainApp] first app mounted');
