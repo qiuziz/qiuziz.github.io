@@ -65,7 +65,7 @@ export default class Dashboard extends Component<any, any> {
     const subAppList = MENU_LIST.map((menu: any) => {
       return {
         name: menu.title,
-        entry: `//${window.location.host}${menu.entry}`,
+        entry: `//${window.location.host}${menu.url}`,
         container: '#subapp-viewport',
         loader,
         activeRule: menu.url
