@@ -8,13 +8,17 @@
 import React from 'react';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import Dashboard from 'pages/dashboard';
+import { ViewportProvider } from 'hooks';
 
 const BasicRoute = () => (
-  <BrowserRouter basename={'/'}>
-    <Switch>
-      <Route path="*" component={Dashboard} />
-    </Switch>
-  </BrowserRouter>
+  <ViewportProvider>
+    <BrowserRouter basename={'/'}>
+      <Switch>
+        <Route exact path="/" render={() => (<Redirect to="/q/blog/" />)} />
+        <Route path="*" component={Dashboard} />
+      </Switch>
+    </BrowserRouter>
+  </ViewportProvider>
 );
 
 export default BasicRoute;
