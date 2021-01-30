@@ -15,6 +15,7 @@ import { registerMicroApps, start, initGlobalState, runAfterFirstMounted } from 
 import { HeaderBar } from 'components';
 
 import { MENU_LIST } from './mock';
+import { useViewport } from 'hooks';
 
 const { Header, Content, Footer } = Layout;
 
@@ -38,6 +39,7 @@ export default class Dashboard extends Component<any, any> {
   }
 
   componentDidMount() {
+    const { width } = useViewport();
     const loader = (loading: any) => {
       const container = document.getElementById('subapp-container');
       ReactDOM.render(
@@ -47,7 +49,8 @@ export default class Dashboard extends Component<any, any> {
               position: 'fixed',
               top: '50%',
               left: 'calc(50% - 100px)',
-              zIndex: 99
+              zIndex: 99,
+              zoom: width <= 600 ? 0.3 : 1
             }}
             spinning={loading}
           />
