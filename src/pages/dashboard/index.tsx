@@ -73,7 +73,7 @@ export default function Dashboard(props: any) {
     /**
      * Step4 启动应用
      */
-    start({ sandbox: { experimentalStyleIsolation: true } });
+    start({ prefetch: false, sandbox: { experimentalStyleIsolation: true } });
   });
 
   return (
@@ -88,7 +88,7 @@ export default function Dashboard(props: any) {
         <Content className="site-layout-background">
           <div id="subapp-container" className="view"></div>
         </Content>
-        <Footer className="widgets-layout-container-footer">Widgets ©2021 Created by qiuz</Footer>
+        <Footer className="widgets-layout-container-footer">©2021 Created by qiuz</Footer>
       </Layout>
     </BrowserRouter>
   );
