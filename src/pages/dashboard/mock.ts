@@ -13,4 +13,11 @@ export const MENU_LIST = [
     url: '/q/react-image-map/',
     entry: '/react-image-map/',
   },
+  {
+    id: 3,
+    key: 3,
+    title: 'Widgets',
+    url: '/q/widgets/',
+    entry: '/widgets/',
+  },
 ];

@@ -54,7 +54,7 @@ export default function Dashboard(props: any) {
   const subAppList: any = MENU_LIST.map((menu: any) => {
     return {
       name: menu.title,
-      entry: `//${window.location.host}${menu.entry}`,
+      entry: `//${process.env.NODE_ENV === 'development' ? '' : window.location.host}${menu.entry}`,
       container: '#subapp-viewport',
       loader,
       activeRule: menu.url
