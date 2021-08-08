@@ -16,8 +16,8 @@ export const MENU_LIST = [
   {
     id: 3,
     key: 3,
-    title: 'Widgets',
-    url: '/q/widgets/',
-    entry: '/widgets/',
+    title: 'Tools',
+    url: '/q/tools/',
+    entry: '/tools/',
   },
 ];

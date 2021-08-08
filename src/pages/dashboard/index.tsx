@@ -78,7 +78,7 @@ export default function Dashboard(props: any) {
 
   return (
     <BrowserRouter>
-      <Layout className="widgets-layout">
+      <Layout className="tools-layout">
         <Header className="header">
           <div className="logo">
             <a href="/">Qiuz</a>
@@ -88,7 +88,7 @@ export default function Dashboard(props: any) {
         <Content className="site-layout-background">
           <div id="subapp-container" className="view"></div>
         </Content>
-        <Footer className="widgets-layout-container-footer">©2021 Created by qiuz</Footer>
+        <Footer className="tools-layout-container-footer">©2021 Created by qiuz</Footer>
       </Layout>
     </BrowserRouter>
   );
